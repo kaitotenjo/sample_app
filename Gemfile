@@ -13,6 +13,8 @@ gem "webpacker", "~> 4.0"
 gem "config"
 gem "rails-i18n"
 gem "will_paginate"
+gem 'active_storage_validations'
+
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
 end
