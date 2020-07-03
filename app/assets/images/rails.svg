@@ -2,18 +2,12 @@
 <html id="publicDialog">
 <head>
   <title>(404) | LearnEnough.com</title>
-<<<<<<< HEAD
   <link href='/favicon.png' rel='icon'>
   <script src='//use.typekit.net/nqj6bco.js'></script>
-=======
-  <link href="/favicon.png" rel="icon">
-  <script src="//use.typekit.net/nqj6bco.js"></script>
->>>>>>> 21aa6dab15bd4a431576c8dc428a7f6247789b5e
   <script>
     try{Typekit.load();}catch(e){}
   </script>
   <style type="text/css">
-
 #publicDialog body {
   background-color: #7292b0;
   background-image: url("/assets/learnenough/bg_blur.jpg");
@@ -85,27 +79,22 @@ h5 {
 }
   </style>
 </head>
-
 <body>
   <!-- This file lives in public/404.html -->
-
   <div id="header">
     <a href="/" class="logoLink artLogo"><img alt="Logo" src="/assets/learnenough/logo.png">
     <span>LEARN ENOUGH</span>
     </a>
     <div class="clear"></div>
   </div>
+<div class="wrapper wrapperForm">
+  <h1>Error 404</h1>
+  <h5>Sorry, there's been a problem</h5>
+    <p>The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
 
 <div class="wrapper wrapperForm">
   <h1>Error 404</h1>
-<<<<<<< HEAD
   <h5>Sorry, there's been a problem</h5>
     <p>The page you were looking for doesn't exist. You may have mistyped the address or the page may have moved.</p>
-=======
-  <h5>Sorry, there"s been a problem</h5>
-    <p>The page you were looking for doesn"t exist. You may have mistyped the address or the page may have moved.</p>
->>>>>>> 21aa6dab15bd4a431576c8dc428a7f6247789b5e
-</div>
-
 </body>
 </html>
