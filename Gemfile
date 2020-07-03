@@ -31,7 +31,6 @@ group :development, :test do
   gem "rubocop", "~> 0.74.0", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false
 end
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data"
 gem "bcrypt", "3.1.13"
 gem "bootstrap-sass", "3.4.1"
