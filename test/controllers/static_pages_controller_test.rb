@@ -1,14 +1,22 @@
-require 'test_helper'
+require "test_helper"
 
 class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   def setup
     @base_title = "Ruby on Rails Tutorial Sample App"
     end
+<<<<<<< HEAD
     
   #test "should get root" do
    # get FILL_IN
     #assert_response FILL_IN
    # end
+=======
+
+  # test "should get root" do
+  #  get FILL_IN
+  #   assert_response FILL_IN
+  #   end
+>>>>>>> 21aa6dab15bd4a431576c8dc428a7f6247789b5e
 
   test "should get home" do
     get root_path

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'test_helper'
 
 class SiteLayoutTest < ActionDispatch::IntegrationTest
@@ -7,6 +8,14 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
   test "layout links" do
     get root_path
     assert_template 'static_pages/home'
+=======
+require "test_helper"
+
+class SiteLayoutTest < ActionDispatch::IntegrationTest
+  test "layout links" do
+    get root_path
+    assert_template "static_pages/home"
+>>>>>>> 21aa6dab15bd4a431576c8dc428a7f6247789b5e
     assert_select "a[href=?]", root_path, count: 2
     assert_select "a[href=?]", help_path
     assert_select "a[href=?]", about_path
