@@ -1,3 +1,3 @@
-maximumName: 50
-maximumEmail: 255
-minimumPW: 6
+NAME: 60
+EMAIL: 255
+PW: 6
