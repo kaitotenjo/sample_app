@@ -1,5 +1,6 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
+  has_many :microposts
   before_save :downcase_email
   before_create :create_activation_digest
   validates :name, presence: true, length: {maximum: Settings.NAME}
@@ -9,9 +10,9 @@ class User < ApplicationRecord
   uniqueness: {case_sensitive: false}
   has_secure_password
   validates :password, presence: true, length: {minimum: Settings.PW}, allow_nil: true
-  scope :lastest, ->{order(created_at: DESC)}
+  scope :lastest, ->{order(created_at: :DESC)}
 
-  def self.digest(string)
+  def self.digest string
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
     BCrypt::Password.create(string, cost: cost)
   end
@@ -19,7 +20,7 @@ class User < ApplicationRecord
   def self.new_token
     SecureRandom.urlsafe_base64
   end
-  def authenticated?(attribute,remember_token)
+  def authenticated? attribute,remember_token
     digest = send("#{attribute}_digest")
     return false unless remember_digest
     BCrypt::Password.new(remember_digest).is_password?(remember_token)
